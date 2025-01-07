@@ -18,7 +18,7 @@ logging.basicConfig(filename='bot.log', level=logging.DEBUG, format='%(asctime)s
 bot = telebot.TeleBot('7081517613:AAGghYUE7XIvWxcw6zFHuGNBjZvTf8dkPC0')
 # Owner and admin user IDs
 owner_id = "6543206935,1221262658"
-admin_ids = ["6543206935"]
+admin_ids = ["6543206935,1221262658"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
