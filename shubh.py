@@ -17,8 +17,8 @@ logging.basicConfig(filename='bot.log', level=logging.DEBUG, format='%(asctime)s
 # Insert your Telegram bot token here
 bot = telebot.TeleBot('7081517613:AAGghYUE7XIvWxcw6zFHuGNBjZvTf8dkPC0')
 # Owner and admin user IDs
-owner_id = "6543206935,1221262658"
-admin_ids = ["6543206935,1221262658"]
+owner_id = "6543206935","1221262658"
+admin_ids = ["6543206935","1221262658"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -152,7 +152,7 @@ def approve_user(message):
         else:
             response = "Usage: /approveuser <id> <duration>"
     else:
-        response = "Only @Shubham_Chity Can Run This Command 😡."
+        response = "Only @iNSANE_010 PAPA Can Run This Command 😡."
     bot.send_message(message.chat.id, response)
 
 @bot.message_handler(commands=['removeuser'])
@@ -173,7 +173,7 @@ def remove_user(message):
         else:
             response = "Usage: /removeuser <id>"
     else:
-        response = "Only @Shubham_Chity Can Run This Command 😡."
+        response = "Only @iNSANE_010 PAPA Can Run This Command 😡."
     bot.send_message(message.chat.id, response)
 
 @bot.message_handler(commands=['addadmin'])
@@ -190,7 +190,7 @@ def add_admin(message):
         else:
             response = "Usage: /addadmin <id> <balance>"
     else:
-        response = "Only the @Shubham_Chity Can Run This Command 😡."
+        response = "Only the @iNSANE_010 PAPA Can Run This Command 😡."
     bot.send_message(message.chat.id, response)
 
 @bot.message_handler(commands=['removeadmin'])
@@ -208,7 +208,7 @@ def remove_admin(message):
         else:
             response = "Usage: /removeadmin <id>"
     else:
-        response = "Only the @Shubham_Chity Can Run This Command 😡."
+        response = "Only the @iNSANE_010 PAPA Can Run This Command 😡."
     bot.send_message(message.chat.id, response)
 
 @bot.message_handler(commands=['creategift'])
@@ -232,7 +232,7 @@ def create_gift(message):
         else:
             response = "Usage: /creategift <day/week/month>"
     else:
-        response = "Only @Shubham_Chity Can Run This Command 😡."
+        response = "Only @iNSANE_010 PAPA Can Run This Command 😡."
     bot.send_message(message.chat.id, response)
 
 @bot.message_handler(commands=['redeem'])
@@ -280,7 +280,7 @@ def set_key_price(message):
         else:
             response = "Usage: /setkeyprice <day/week/month> <price>"
     else:
-        response = "Only the @Shubham_Chity Can Run This Command 😡."
+        response = "Only the @iNSANE_010 PAPA Can Run This Command 😡."
     bot.send_message(message.chat.id, response)
 
 # Function to handle the reply when free users run the /attack command
@@ -288,7 +288,7 @@ def start_attack_reply(message, target, port, time):
     user_info = message.from_user
     username = user_info.username if user_info.username else user_info.first_name
             
-    response = f"🚀Attack Started Successfully! 🚀\n\n🗿𝐓𝐚𝐫𝐠𝐞𝐭: {target}:{port}\n🕦Attack Duration: {time}\n💣Method: UDP-BGMI\n\n🔥Status: BGMI SEX IN PROGRESS... 🔥 dm to by @Shubham_Chity ...❤️"
+    response = f"🚀Attack Started Successfully! 🚀\n\n🗿𝐓𝐚𝐫𝐠𝐞𝐭: {target}:{port}\n🕦Attack Duration: {time}\n💣Method: UDP-BGMI\n\n🔥Status: BGMI SEX IN PROGRESS... 🔥 dm to by @iNSANE_010 PAPA ...❤️"
     bot.send_message(message.chat.id, response)
 
 # Dictionary to store the last time each user ran the /attack command
@@ -332,14 +332,14 @@ def handle_attack(message):
     else:
         response = ("🚫 Unauthorized Access! 🚫\n\nOops! It seems like you don't have permission to use the /attack command. "
                     "To gain access and unleash the power of attacks, you can:\n\n👉 Contact an Admin or the Owner for approval.\n"
-                    "🌟THE ONLY OWNER IS @Shubham_Chity DM TO BUY ACCESS")
+                    "🌟THE ONLY OWNER IS @iNSANE_010 PAPA DM TO BUY ACCESS")
 
     bot.send_message(message.chat.id, response)
 
 # message_handler(func=lambda message: True)
 def handle_unknown_command(message):
     response = (
-        f"🌟 Welcome to the @Shubham_Chity OFFICIAL DDOS Bot! 🌟\n\n"
+        f"🌟 Welcome to the @iNSANE_010 PAPA OFFICIAL DDOS Bot! 🌟\n\n"
         f"Current Time: {get_current_time()}\n\n"
         "Here are some commands you can use:\n"
         "❌ /removeuser <id> - Remove a user\n"
@@ -387,7 +387,7 @@ def show_all_users(message):
         except FileNotFoundError:
             response = "No data found ❌"
     else:
-        response = "Only @Shubham_Chity Can Run This Command 😡."
+        response = "Only @iNSANE_010 PAPA Can Run This Command 😡."
     bot.send_message(message.chat.id, response)
 
 @bot.message_handler(commands=['clearusers'])
@@ -405,7 +405,7 @@ def clear_users_command(message):
         except FileNotFoundError:
             response = "users are already cleared ❌."
     else:
-        response = "Only @Shubham_Chity Can Run This Command 😡."
+        response = "Only @iNSANE_010 PAPA Can Run This Command 😡."
     bot.reply_to(message, response)
  
 
